@@ -1,0 +1,262 @@
+.teacher-attendance-details {
+  padding: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.teacher-attendance-details h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.teacher-info {
+  background: white;
+  padding: 18px 22px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.teacher-info h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.teacher-info p {
+  margin: 7px 0;
+  font-size: 16px;
+}
+
+.month-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.month-selector label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.month-selector input {
+  padding: 8px 11px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* SECTION TITLE */
+
+.section-title {
+  font-size: 21px;
+  margin: 20px 0 14px;
+}
+
+/* MONTHLY SUMMARY */
+
+.attendance-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.summary-card {
+  padding: 14px;
+  border-radius: 9px;
+  text-align: center;
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.summary-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.summary-card strong {
+  font-size: 25px;
+}
+
+/* SUMMARY COLORS */
+
+.summary-card.working {
+  border-left: 5px solid #374151;
+}
+
+.summary-card.present {
+  border-left: 5px solid #16a34a;
+}
+
+.summary-card.absent {
+  border-left: 5px solid #dc2626;
+}
+
+.summary-card.leave {
+  border-left: 5px solid #f59e0b;
+}
+
+.summary-card.holiday {
+  border-left: 5px solid #2563eb;
+}
+
+.summary-card.percentage {
+  border-left: 5px solid #7c3aed;
+}
+
+/* LEGEND */
+
+.attendance-legend {
+  display: flex;
+  gap: 22px;
+  margin: 12px 0 20px;
+  font-size: 15px;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.attendance-legend div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.legend-box {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.present-color {
+  background: #dcfce7;
+  border: 1px solid #16a34a;
+}
+
+.absent-color {
+  background: #fee2e2;
+  border: 1px solid #dc2626;
+}
+
+.leave-color {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+}
+
+.holiday-color {
+  background: #dbeafe;
+  border: 1px solid #2563eb;
+}
+
+/* CALENDAR */
+
+.attendance-calendar {
+  width: 100%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: 1px solid #d1d5db;
+  background: white;
+}
+
+.calendar-header {
+  padding: 8px 5px;
+  background: #f3f4f6;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.calendar-day {
+  height: 68px;
+  padding: 7px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: white;
+}
+
+.calendar-empty {
+  height: 68px;
+  background: #fafafa;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.date-number {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.attendance-status {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* STATUS COLORS */
+
+.status-present {
+  background: #dcfce7;
+}
+
+.status-present .attendance-status {
+  color: #15803d;
+}
+
+.status-absent {
+  background: #fee2e2;
+}
+
+.status-absent .attendance-status {
+  color: #b91c1c;
+}
+
+.status-leave {
+  background: #fef3c7;
+}
+
+.status-leave .attendance-status {
+  color: #b45309;
+}
+
+.status-holiday {
+  background: #dbeafe;
+}
+
+.status-holiday .attendance-status {
+  color: #1d4ed8;
+}
+
+/* LOADING / ERROR */
+
+.attendance-loading,
+.attendance-error {
+  padding: 25px;
+  font-size: 17px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .teacher-attendance-details {
+    padding: 15px;
+  }
+
+  .attendance-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .attendance-calendar {
+    min-width: 650px;
+  }
+
+  .teacher-attendance-details {
+    overflow-x: auto;
+  }
+}

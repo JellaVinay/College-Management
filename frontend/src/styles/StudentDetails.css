@@ -1,0 +1,142 @@
+.student-details-page {
+  min-height: 100vh;
+  background: #f4f6f9;
+  padding: 40px 20px;
+}
+
+.details-container {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.details-header h1 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.details-header p {
+  color: #6b7280;
+}
+
+.details-header button {
+  border: none;
+  background: #6b7280;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Sections */
+
+.profile-section {
+  margin-bottom: 30px;
+}
+
+.profile-section h2 {
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+/* Details */
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.detail-item {
+  padding: 15px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.detail-item span {
+  display: block;
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.detail-item strong {
+  color: #1f2937;
+}
+
+/* Academic */
+
+.coming-soon {
+  padding: 18px;
+  background: #eff6ff;
+  color: #1e40af;
+  border-radius: 8px;
+}
+
+/* Actions */
+
+.student-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.student-actions button {
+  border: none;
+  padding: 11px 20px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.edit-button {
+  background: #2563eb;
+  
+}
+
+.delete-button {
+  background: #dc2626;
+}
+
+/* Error */
+
+.error-message {
+  padding: 12px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .details-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .student-actions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,178 @@
+.college-holidays-page {
+  padding: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.college-holidays-page h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.page-description {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* FORM */
+
+.holiday-form-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.holiday-form-card h2 {
+  margin-top: 0;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.form-buttons button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background: #6b7280 !important;
+}
+
+/* MESSAGES */
+
+.holiday-success,
+.holiday-error {
+  padding: 11px 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.holiday-success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.holiday-error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* LIST */
+
+.holiday-list-section {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.holiday-list-section h2 {
+  margin-top: 0;
+  font-size: 21px;
+  margin-bottom: 18px;
+}
+
+.holiday-table-container {
+  overflow-x: auto;
+}
+
+.holiday-list-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.holiday-list-section th,
+.holiday-list-section td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 15px;
+}
+
+.holiday-list-section th {
+  background: #2563eb;
+  font-weight: 700;
+}
+
+.holiday-list-section tr:hover {
+  background: #f9fafb;
+}
+
+/* ACTIONS */
+
+.holiday-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-button,
+.delete-button {
+  border: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.edit-button {
+  background: #2563eb;
+}
+
+.delete-button {
+  background: #dc2626;
+}
+
+.edit-button:hover,
+.delete-button:hover,
+.form-buttons button:hover {
+  opacity: 0.9;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .college-holidays-page {
+    padding: 15px;
+  }
+
+  .holiday-actions {
+    flex-direction: column;
+  }
+}

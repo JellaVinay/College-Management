@@ -1,0 +1,175 @@
+.notices-page {
+  min-height: 100vh;
+  background: #f4f6f9;
+  padding: 40px 20px;
+}
+
+.notices-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Header */
+
+.notices-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.notices-header h1 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.notices-header p {
+  color: #6b7280;
+}
+
+.notices-header button {
+  border: none;
+  background: #6b7280;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Form */
+
+.notice-form-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.notice-form-section h2,
+.notice-list-section h2 {
+  color: #1e3a8a;
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.notice-form-section form button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.notice-form-section form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Messages */
+
+.success-message {
+  padding: 12px;
+  margin-bottom: 20px;
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 6px;
+}
+
+.error-message {
+  padding: 12px;
+  margin-bottom: 20px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 6px;
+}
+
+/* Notice List */
+
+.notice-list-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.notice-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.notice-card h3 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.notice-card p {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.notice-card small {
+  color: #6b7280;
+}
+
+.delete-notice-button {
+  height: fit-content;
+  border: none;
+  background: #dc2626;
+  color: white;
+  padding: 8px 13px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-notices {
+  padding: 30px;
+  text-align: center;
+  color: #6b7280;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .notices-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .notice-card {
+    flex-direction: column;
+  }
+}

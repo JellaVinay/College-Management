@@ -1,0 +1,196 @@
+/* =================================
+   TEACHER DASHBOARD
+================================= */
+
+.teacher-dashboard {
+  min-height: 100vh;
+  background-color: #f4f7fb;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.teacher-dashboard-header {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.teacher-dashboard-header h1 {
+  margin: 0 0 15px;
+  color: #1f2937;
+  font-size: 30px;
+}
+
+.teacher-dashboard-header p {
+  margin: 6px 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* =================================
+   DASHBOARD ACTIONS
+================================= */
+
+.dashboard-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+/* =================================
+   SUBJECT MARKS CARD
+================================= */
+
+.dashboard-card {
+  background-color: white;
+  padding: 25px;
+  min-height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-card h3 {
+  margin: 0 0 10px;
+  color: #2563eb;
+  font-size: 19px;
+}
+
+.dashboard-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* =================================
+   DASHBOARD BUTTONS
+================================= */
+
+.dashboard-button {
+  min-height: 150px;
+  padding: 25px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: white;
+  color: #2563eb;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+  transition: 0.2s ease;
+}
+
+.dashboard-button:hover {
+  transform: translateY(-3px);
+
+  background-color: #2563eb;
+  color: white;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =================================
+   LOGOUT BUTTON
+================================= */
+
+.logout-button {
+  min-height: 150px;
+  padding: 25px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #dc2626;
+  color: white;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+  transition: 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #b91c1c;
+  transform: translateY(-3px);
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 1000px) {
+
+  .teacher-dashboard {
+    padding: 30px;
+  }
+
+  .dashboard-actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+  .teacher-dashboard {
+    padding: 15px;
+  }
+
+  .teacher-dashboard-header {
+    padding: 20px;
+  }
+
+  .teacher-dashboard-header h1 {
+    font-size: 24px;
+  }
+
+  .dashboard-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-card,
+  .dashboard-button,
+  .logout-button {
+    min-height: 120px;
+  }
+
+}

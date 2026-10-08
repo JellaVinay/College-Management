@@ -1,0 +1,376 @@
+.admin-results-page {
+  min-height: 100vh;
+  background-color: #f4f7fb;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.admin-results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.admin-results-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #1f2937;
+}
+
+.admin-results-header p {
+  margin: 7px 0 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* ================================
+   BACK BUTTON
+================================ */
+
+.admin-results-back-btn {
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.admin-results-back-btn:hover {
+  background-color: #1d4ed8;
+}
+
+
+/* ================================
+   FILTER CARD
+================================ */
+
+.results-filter-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.results-filter-card h2 {
+  margin: 0 0 20px;
+  color: #1f2937;
+  font-size: 21px;
+}
+
+
+/* ================================
+   FILTER GRID
+================================ */
+
+.results-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.results-filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.results-filter-group label {
+  margin-bottom: 7px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.results-filter-group input,
+.results-filter-group select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+  color: #374151;
+  outline: none;
+  font-size: 14px;
+}
+
+.results-filter-group input:focus,
+.results-filter-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ================================
+   FILTER BUTTONS
+================================ */
+
+.results-filter-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.search-results-btn,
+.clear-results-btn {
+  border: none;
+  padding: 11px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search-results-btn {
+  background-color: #2563eb;
+  color: white;
+}
+
+.search-results-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.search-results-btn:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.clear-results-btn {
+  background-color: #6b7280;
+  color: white;
+}
+
+.clear-results-btn:hover {
+  background-color: #4b5563;
+}
+
+
+/* ================================
+   RESULTS CARD
+================================ */
+
+.admin-results-list-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================
+   RESULTS HEADER
+================================ */
+
+.results-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.results-list-header h2 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 21px;
+}
+
+.results-list-header span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* ================================
+   TABLE
+================================ */
+
+.admin-results-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-results-table {
+  width: 100%;
+  min-width: 1500px;
+  border-collapse: collapse;
+}
+
+.admin-results-table th {
+  background-color: #2563eb;
+  color: white;
+  padding: 13px 12px;
+  text-align: left;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.admin-results-table td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.admin-results-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+
+/* ================================
+   SUBJECT MARKS
+================================ */
+
+.subject-marks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 170px;
+}
+
+.subject-mark-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 6px 8px;
+  background-color: #f3f4f6;
+  border-radius: 5px;
+}
+
+.subject-mark-item strong {
+  color: #2563eb;
+}
+
+.subject-mark-item span {
+  color: #374151;
+}
+
+
+/* ================================
+   GRADE
+================================ */
+
+.grade-badge {
+  display: inline-block;
+  min-width: 32px;
+  padding: 5px 8px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+
+/* ================================
+   STATUS
+================================ */
+
+.status-pass,
+.status-fail {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-pass {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-fail {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+
+/* ================================
+   MESSAGES
+================================ */
+
+.results-loading,
+.no-results {
+  text-align: center;
+  padding: 35px;
+  color: #6b7280;
+}
+
+.admin-results-error {
+  padding: 10px 14px;
+  background-color: #fee2e2;
+  color: #991b1b;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1000px) {
+
+  .admin-results-page {
+    padding: 25px;
+  }
+
+  .results-filter-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .admin-results-page {
+    padding: 15px;
+  }
+
+  .admin-results-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .admin-results-header h1 {
+    font-size: 24px;
+  }
+
+  .admin-results-back-btn {
+    width: 100%;
+  }
+
+  .results-filter-card,
+  .admin-results-list-card {
+    padding: 18px;
+  }
+
+  .results-filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .results-filter-buttons {
+    flex-direction: column;
+  }
+
+  .search-results-btn,
+  .clear-results-btn {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,94 @@
+.teacher-attendance-page {
+  padding: 30px;
+}
+
+.teacher-attendance-page h1 {
+  margin-bottom: 25px;
+}
+
+.attendance-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.attendance-controls label {
+  font-weight: 600;
+}
+
+.attendance-controls input {
+  padding: 9px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.attendance-controls button,
+.teacher-attendance-page td button {
+  padding: 9px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+.attendance-controls button:hover,
+.teacher-attendance-page td button:hover {
+  opacity: 0.9;
+}
+
+.attendance-message {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.teacher-attendance-page table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.teacher-attendance-page th,
+.teacher-attendance-page td {
+  padding: 13px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.teacher-attendance-page th {
+  background: #2563eb;
+  font-weight: 600;
+}
+
+.teacher-attendance-page tr:hover {
+  background: #f9fafb;
+}
+
+.teacher-attendance-page select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .teacher-attendance-page {
+    padding: 15px;
+  }
+
+  .attendance-controls {
+    flex-wrap: wrap;
+  }
+
+  .teacher-attendance-page {
+    overflow-x: auto;
+  }
+
+  .teacher-attendance-page table {
+    min-width: 800px;
+  }
+}

@@ -1,0 +1,246 @@
+/* =========================================
+   STUDENT RESULTS PAGE
+========================================= */
+
+.student-results-page {
+  min-height: 100vh;
+  padding: 30px;
+  background-color: #f5f7fb;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.student-results-header {
+  margin-bottom: 25px;
+}
+
+.student-results-header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  color: #1f2937;
+}
+
+.student-results-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.student-results-error {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  font-weight: 500;
+}
+
+
+/* =========================================
+   STUDENT INFORMATION
+========================================= */
+
+.student-info-card {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.student-info-card h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.student-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 30px;
+}
+
+.student-info-grid p {
+  margin: 0;
+  color: #4b5563;
+}
+
+
+/* =========================================
+   NO RESULTS
+========================================= */
+
+.no-results-card {
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.no-results-card h2 {
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.no-results-card p {
+  margin: 0;
+  color: #6b7280;
+}
+
+
+/* =========================================
+   RESULT CARD
+========================================= */
+
+.student-result-card {
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   EXAM HEADER
+========================================= */
+
+.result-exam-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.result-exam-header h2 {
+  margin: 0 0 8px;
+  color: #1f2937;
+}
+
+.result-exam-header p {
+  margin: 5px 0;
+  color: #6b7280;
+}
+
+
+/* =========================================
+   RESULT SUMMARY
+========================================= */
+
+.result-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.result-summary h3 {
+  margin: 0;
+  font-size: 30px;
+  color: #2563eb;
+}
+
+.result-summary span {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   RESULTS TABLE
+========================================= */
+
+.student-results-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.student-results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-results-table th,
+.student-results-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.student-results-table th {
+  background-color: #f9fafb;
+  color: #374151;
+  font-weight: 600;
+}
+
+.student-results-table td {
+  color: #4b5563;
+}
+
+.student-results-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+
+/* =========================================
+   TOTAL SECTION
+========================================= */
+
+.result-total {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 20px 25px;
+  background-color: #f9fafb;
+}
+
+.result-total p {
+  margin: 0;
+  color: #374151;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .student-results-page {
+    padding: 20px;
+  }
+
+  .student-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-exam-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .result-summary {
+    flex-wrap: wrap;
+  }
+
+  .result-total {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}

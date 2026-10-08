@@ -1,0 +1,277 @@
+.teacher-marks-page {
+  min-height: 100vh;
+  background-color: #f4f7fb;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+
+/* Header */
+
+.teacher-marks-header {
+  margin-bottom: 25px;
+}
+
+.teacher-marks-header h1 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 28px;
+}
+
+.teacher-marks-header p {
+  margin-top: 7px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* Selection Card */
+
+.marks-selection-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.marks-selection-card h2,
+.teacher-marks-list-card h2 {
+  margin: 0 0 20px;
+  color: #1f2937;
+  font-size: 21px;
+}
+
+
+/* Messages */
+
+.marks-success {
+  background-color: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.marks-error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+
+/* Selection Grid */
+
+.marks-selection-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 20px;
+  align-items: end;
+}
+
+
+/* Form */
+
+.marks-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.marks-form-group label {
+  margin-bottom: 7px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.marks-form-group select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+  color: #374151;
+  font-size: 14px;
+  outline: none;
+}
+
+.marks-form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+
+/* Load Button */
+
+.load-marks-wrapper {
+  display: flex;
+}
+
+.load-marks-btn {
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.load-marks-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.load-marks-btn:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+
+/* Student Marks Card */
+
+.teacher-marks-list-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Table */
+
+.teacher-marks-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.teacher-marks-table {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+}
+
+.teacher-marks-table th {
+  background-color: #2563eb;
+  color: white;
+  padding: 13px 12px;
+  text-align: left;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.teacher-marks-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.teacher-marks-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+
+/* Marks Input */
+
+.marks-input {
+  width: 80px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.marks-input:focus {
+  border-color: #2563eb;
+}
+
+
+/* Save Button */
+
+.save-mark-btn {
+  border: none;
+  background-color: #16a34a;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.save-mark-btn:hover {
+  background-color: #15803d;
+}
+
+
+/* No Students */
+
+.no-students-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: #6b7280;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .teacher-marks-page {
+    padding: 25px;
+  }
+
+  .marks-selection-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .load-marks-wrapper {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .teacher-marks-page {
+    padding: 15px;
+  }
+
+  .teacher-marks-header h1 {
+    font-size: 24px;
+  }
+
+  .marks-selection-card,
+  .teacher-marks-list-card {
+    padding: 18px;
+  }
+
+  .marks-selection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .load-marks-wrapper {
+    grid-column: auto;
+  }
+
+  .load-marks-btn {
+    width: 100%;
+  }
+
+}
